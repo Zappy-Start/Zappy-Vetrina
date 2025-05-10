@@ -169,6 +169,16 @@
         align-items: center;
       }
     }
+  
+    .mobile-only {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .mobile-only {
+        display: block;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -186,8 +196,12 @@
       <li><a href="#prezzi">Prezzi</a></li>
       <li><a href="#contatti">Contatti</a></li>
     </ul>
-    <a class="cta" href="https://wa.me/393791243514" target="_blank">Inizia ora</a>
+    <a class="cta mobile-hide-on-small" href="https://wa.me/393791243514" target="_blank">Inizia ora</a>
   </nav>
+  <div class="mobile-only" style="text-align: center; margin: 1rem 0;">
+    <a class="cta" href="https://wa.me/393791243514" target="_blank">Inizia ora</a>
+  </div>
+
 
   <section class="hero">
     <h1>La Soluzione <span>All-in-One</span> per il tuo Locale</h1>
