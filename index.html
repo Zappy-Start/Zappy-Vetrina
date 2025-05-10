@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zappy - Ordina e Paga</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zappy - Il futuro dell'ordinazione</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="hero">
     <h1>Zappy</h1>
     <p>Dal tavolo al bancone, in un tap.</p>
-    <a href="#funzionalita" class="cta">Scopri come funziona</a>
+    <a href="#funzioni" class="cta">Scopri tutte le funzionalità</a>
   </header>
 
-  <section id="funzionalita">
-    <h2>Come funziona</h2>
-    <p>Scansiona il QR code, ordina dal tuo smartphone, paga online e ricevi il tuo ordine direttamente al tavolo.</p>
+  <section class="sezione" id="funzioni">
+    <h2>Funzionalità principali</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="immagini/qr.png" alt="QR Code">
+        <h3>Ordine via QR</h3>
+        <p>I clienti inquadrano il QR al tavolo e ordinano dal telefono, senza scaricare app.</p>
+      </div>
+      <div class="card">
+        <img src="immagini/pay.png" alt="Pagamento">
+        <h3>Pagamento diretto</h3>
+        <p>Pagamento sicuro online con carta o wallet. Il bar non deve toccare soldi.</p>
+      </div>
+      <div class="card">
+        <img src="immagini/printer.png" alt="Stampante">
+        <h3>Comanda automatica</h3>
+        <p>La comanda viene stampata automaticamente al bancone o in cucina.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="prezzi">
-    <h2>Prezzi</h2>
-    <p>Kit iniziale: <strong>200€</strong><br>Abbonamento mensile: <strong>69,90€</strong></p>
+  <section class="sezione highlight">
+    <h2>Perché scegliere Zappy</h2>
+    <ul>
+      <li>✔ Nessuna app da installare</li>
+      <li>✔ Facile per clienti e baristi</li>
+      <li>✔ Personalizzabile con logo, foto, prezzi</li>
+      <li>✔ Supporto dedicato incluso</li>
+    </ul>
   </section>
 
-  <section id="faq">
-    <h2>FAQ</h2>
-    <p><strong>Serve un'app?</strong> No, funziona direttamente dal browser con un QR.</p>
-    <p><strong>Serve connessione internet?</strong> Solo per i clienti, il bar usa la stampante in Wi-Fi o LAN.</p>
+  <section class="sezione prezzi">
+    <h2>Prezzi trasparenti</h2>
+    <p><strong>Starter Kit:</strong> 200€ una tantum</p>
+    <p><strong>Abbonamento:</strong> 69,90€/mese tutto incluso</p>
   </section>
 
-  <section id="contatti">
+  <section class="sezione demo">
+    <h2>Guarda la demo</h2>
+    <a href="https://zappy-24d29.web.app" target="_blank" class="cta">Vai al sito demo</a>
+  </section>
+
+  <section class="sezione contatti">
     <h2>Contattaci</h2>
-    <p>Per info o acquisto scrivici su WhatsApp!</p>
-    <a class="cta" href="https://wa.me/393791243514" target="_blank">Scrivici su WhatsApp</a>
-    <p>Oppure via email: <a href="mailto:info@zappy.it">info@zappy.it</a></p>
-  </section>
-
-  <section id="english">
-    <h2>English Version</h2>
-    <p><strong>Zappy</strong> lets your customers order and pay from their table using only a QR code. No app required.</p>
-    <p><strong>Starter kit:</strong> €200<br><strong>Monthly plan:</strong> €69.90</p>
-    <p><strong>Contact us on WhatsApp:</strong> <a href="https://wa.me/393791243514" target="_blank">Chat Now</a></p>
+    <p>Vuoi Zappy nel tuo locale? Scrivici su WhatsApp:</p>
+    <a href="https://wa.me/393791243514" class="cta" target="_blank">Contattaci ora</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 Zappy. Tutti i diritti riservati.</p>
+    <p>&copy; 2025 Zappy - Tutti i diritti riservati.</p>
   </footer>
 </body>
 </html>
