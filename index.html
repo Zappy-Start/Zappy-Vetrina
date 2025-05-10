@@ -156,7 +156,14 @@
       height: 60px;
     }
 
-    @media (max-width: 768px) {
+    .mobile-hide-on-small {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mobile-hide-on-small {
+    display: none;
+  }
       .hero-images {
         flex-direction: column;
         align-items: center;
@@ -173,7 +180,7 @@
   <div class="popup-spacer"></div>
 
   <nav>
-    <div class="logo">Zappy</div>
+    <div class="logo mobile-hide-on-small">Zappy</div>
     <ul>
       <li><a href="#funzionalita">Funzionalità</a></li>
       <li><a href="#prezzi">Prezzi</a></li>
