@@ -297,6 +297,19 @@
       color: black;
     }
 
+  
+    @media (max-width: 768px) {
+      .app-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+      }
+      .app-grid .app-box:nth-child(5) {
+        grid-column: 1 / span 2;
+        justify-self: center;
+      }
+    }
+
   </style>
 </head>
 <body>
