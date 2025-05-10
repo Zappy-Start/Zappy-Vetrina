@@ -280,20 +280,21 @@
   }
 }
 
-    .animated-gradient-text {
+    .static-gradient-text {
       font-weight: bold;
       font-size: 1.8rem;
-      background: linear-gradient(270deg, #cc2b5e, #56ccf2, #a8eb12, #f2994a, red, orange, yellow, green, blue, indigo, violet);
-      background-size: 2000% 2000%;
+      background: linear-gradient(90deg, #39D9A9, #00C2FF);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: gradientShift 30s ease infinite;
     }
 
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+  
+    .chrome-style {
+      background: linear-gradient(135deg, #127A61, #39D9A9 30%, #00C2FF 70%, #ffffff);
+      box-shadow: inset 0 1px 1px rgba(255,255,255,0.3),
+                  inset 0 -1px 1px rgba(0,0,0,0.1),
+                  0 3px 8px rgba(0,0,0,0.2);
+      color: black;
     }
 
   </style>
@@ -326,29 +327,31 @@
 
   
 <section class="section" style="text-align:center;">
-  <h2 class="animated-gradient-text">L'unico sistema con app integrate (opzionali)</h2>
-  <div class="app-grid">
-    <div class="app-box" style="background: linear-gradient(to right, #cc2b5e, #ff6f91);">
-      <img src="immagini/qr_cuore.png" alt="Zappy Love" />
-      <span>Zappy</span>
-    </div>
-    <div class="app-box" style="background: linear-gradient(to right, #004e92, #56ccf2);">
-      <img src="immagini/qr_bambino.png" alt="Zappy Baby" />
-      <span>Zappy</span>
-    </div>
-    <div class="app-box" style="background: linear-gradient(to right, #14532d, #a8eb12);">
-      <img src="immagini/qr_game.png" alt="Zappy Game" />
-      <span>Zappy</span>
-    </div>
-    <div class="app-box" style="background: linear-gradient(to right, #f2994a, #f2c94c);">
-      <img src="immagini/qr_wifi.png" alt="Zappy WiFi" />
-      <span>Zappy</span>
-    </div>
-    <div class="app-box" style="background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);">
-      <img src="immagini/qr_rainbow.png" alt="Zappy Rainbow" />
-      <span>Zappy</span>
-    </div>
+  <h2 class="static-gradient-text">L'unico sistema con app integrate (opzionali)</h2>
+  
+
+<div class="app-grid">
+  <div class="app-box chrome-style">
+    <img src="immagini/qr_cuore.png" alt="Zappy Love" />
+    <span>Zappy</span>
   </div>
+  <div class="app-box chrome-style">
+    <img src="immagini/qr_bambino.png" alt="Zappy Baby" />
+    <span>Zappy</span>
+  </div>
+  <div class="app-box chrome-style">
+    <img src="immagini/qr_game.png" alt="Zappy Game" />
+    <span>Zappy</span>
+  </div>
+  <div class="app-box chrome-style">
+    <img src="immagini/qr_wifi.png" alt="Zappy WiFi" />
+    <span>Zappy</span>
+  </div>
+  <div class="app-box chrome-style">
+    <img src="immagini/qr_rainbow.png" alt="Zappy Rainbow" />
+    <span>Zappy</span>
+  </div>
+</div>
 </section>
 
 
