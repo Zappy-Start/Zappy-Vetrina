@@ -279,7 +279,24 @@
     gap: 0.8rem;
   }
 }
-</style>
+
+    .animated-gradient-text {
+      font-weight: bold;
+      font-size: 1.8rem;
+      background: linear-gradient(270deg, #cc2b5e, #56ccf2, #a8eb12, #f2994a, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 2000% 2000%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 30s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+  </style>
 </head>
 <body>
 
@@ -309,25 +326,25 @@
 
   
 <section class="section" style="text-align:center;">
-  <h2 style="color:#00C2FF;">L'unico sistema con app integrate (opzionali)</h2>
+  <h2 class="animated-gradient-text">L'unico sistema con app integrate (opzionali)</h2>
   <div class="app-grid">
-    <div class="app-box" style="background: linear-gradient(to right, #ff758c, #ff7eb3);">
+    <div class="app-box" style="background: linear-gradient(to right, #cc2b5e, #ff6f91);">
       <img src="immagini/qr_cuore.png" alt="Zappy Love" />
       <span>Zappy</span>
     </div>
-    <div class="app-box" style="background: linear-gradient(to right, #56ccf2, #2f80ed);">
+    <div class="app-box" style="background: linear-gradient(to right, #004e92, #56ccf2);">
       <img src="immagini/qr_bambino.png" alt="Zappy Baby" />
       <span>Zappy</span>
     </div>
-    <div class="app-box" style="background: linear-gradient(to right, #a8eb12, #4caf50);">
+    <div class="app-box" style="background: linear-gradient(to right, #14532d, #a8eb12);">
       <img src="immagini/qr_game.png" alt="Zappy Game" />
       <span>Zappy</span>
     </div>
-    <div class="app-box" style="background: linear-gradient(to right, #f7971e, #ffd200);">
+    <div class="app-box" style="background: linear-gradient(to right, #f2994a, #f2c94c);">
       <img src="immagini/qr_wifi.png" alt="Zappy WiFi" />
       <span>Zappy</span>
     </div>
-    <div class="app-box" style="background: linear-gradient(to right, #ff416c, #ff4b2b, #8e44ad);">
+    <div class="app-box" style="background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);">
       <img src="immagini/qr_rainbow.png" alt="Zappy Rainbow" />
       <span>Zappy</span>
     </div>
