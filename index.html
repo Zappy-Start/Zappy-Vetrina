@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -11,7 +12,6 @@
       background: #0c0c15;
       color: white;
     }
-
     nav {
       background: #0c0c15;
       display: flex;
@@ -22,18 +22,15 @@
       top: 20px;
       z-index: 9;
     }
-
     nav ul {
       display: flex;
       list-style: none;
       gap: 1.5rem;
     }
-
     nav ul li a {
       color: white;
       text-decoration: none;
     }
-
     .cta {
       background: linear-gradient(90deg, #39D9A9, #00C2FF);
       color: white;
@@ -42,55 +39,46 @@
       text-decoration: none;
       font-weight: bold;
     }
-
     .hero {
       padding: 6rem 2rem;
       margin-top: 20px;
       text-align: center;
       background: linear-gradient(160deg, #10101A 60%, #141421);
     }
-
     .hero h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
-
     .hero span {
       color: #39D9A9;
     }
-
     .hero-images {
       display: flex;
       justify-content: center;
       gap: 2rem;
       margin-top: 2rem;
     }
-
     .hero-images img {
       max-width: 200px;
       border-radius: 12px;
       border: 1px solid #444;
     }
-
     .section {
       padding: 4rem 2rem;
       max-width: 1100px;
       margin: auto;
     }
-
     .section h2 {
       text-align: center;
       font-size: 2.2rem;
       margin-bottom: 2rem;
     }
-
     .grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
     }
-
     .card {
       background: #1a1a2e;
       border-radius: 12px;
@@ -99,11 +87,9 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
       text-align: center;
     }
-
     .card h3 {
       color: #39D9A9;
     }
-
     .banner {
       background: #39D9A9;
       text-align: center;
@@ -114,7 +100,6 @@
       margin-top: 2rem;
       border-radius: 10px;
     }
-
     .banner a {
       display: inline-block;
       background: black;
@@ -124,7 +109,6 @@
       border-radius: 30px;
       text-decoration: none;
     }
-
     footer {
       background: #0c0c15;
       padding: 2rem;
@@ -132,7 +116,6 @@
       font-size: 0.9rem;
       color: #999;
     }
-
     .popup {
       position: fixed;
       top: 0;
@@ -145,31 +128,26 @@
       font-weight: bold;
       z-index: 100;
     }
-
     .popup a {
       margin-left: 2rem;
       color: #000;
       font-weight: bold;
     }
-
     .popup-spacer {
       height: 60px;
     }
-
     .mobile-hide-on-small {
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .mobile-hide-on-small {
-    display: none;
-  }
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .mobile-hide-on-small {
+        display: none;
+      }
       .hero-images {
         flex-direction: column;
         align-items: center;
       }
     }
-  
     .mobile-only {
       display: none;
     }
@@ -178,33 +156,21 @@
         display: block;
       }
     }
-
-  
     .gradient-text {
       background: linear-gradient(90deg, #39D9A9, #00C2FF);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
-  
-@media (max-width: 768px) {
-  .hero {
-    padding-top: 0.5rem;
-    padding-bottom: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    padding-top: 0.5rem;
-    padding-bottom: 4rem;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-}
-</style>
+    @media (max-width: 768px) {
+      .hero {
+        padding-top: 0.5rem;
+        padding-bottom: 4rem;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -227,11 +193,10 @@
     <a class="cta" href="https://wa.me/393791243514" target="_blank">Inizia ora</a>
   </div>
 
-
   <section class="hero">
     <h1>Il modo più <span class="gradient-text"><em>VELOCE</em></span> per servire i tuoi clienti.</h1>
-    <p>Ordina e paga con un tap. Niente app da scaricare.
-      L' UNICO SISTEMA CON APP INTEGRATE,DAI UN OCCHIO QUA SOTTO. (OPZIONALI).</p>
+    <p>Ordina e paga con un tap. Nessuna app da scaricare.</p>
+    <div style="font-size: 1.2rem; font-weight: bold; margin-top: 10px;" class="gradient-text">L’UNICO SISTEMA CON APP INTEGRATE (OPZIONALI)</div>
     <div class="hero-images">
       <img src="immagini/qr_demo.png" alt="QR">
       <img src="immagini/stampante_demo.png" alt="Stampante">
