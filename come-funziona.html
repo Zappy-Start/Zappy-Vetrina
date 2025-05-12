@@ -501,6 +501,50 @@
     line-height: 1.8;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .grid > div {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .feature-box {
+    height: 280px;
+    font-size: 1.3rem;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .feature-description {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    border-radius: 0 0 16px 16px;
+    margin-top: 0;
+  }
+
+  .feature-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-box p,
+  .feature-description p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+}
 </style>
 </head>
 <body>
