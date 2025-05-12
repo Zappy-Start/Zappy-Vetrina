@@ -545,6 +545,21 @@
     line-height: 1.8;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+
+  .why-box {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
 </style>
 </head>
 <body>
