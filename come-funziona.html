@@ -811,6 +811,73 @@ body {
     line-height: 1.7;
   }
 }
+
+@media screen and (max-width: 768px) {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+    display: none;
+  }
+
+    flex: 0 0 95vw !important;
+    max-width: 95vw !important;
+    scroll-snap-align: center !important;
+    padding: 2.5rem !important;
+    font-size: 1.3rem !important;
+    min-height: 460px !important;
+    box-sizing: border-box;
+  }
+
+    font-size: 1.8rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+    font-size: 1.3rem !important;
+    line-height: 1.9 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .scrollable-why {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .scrollable-why::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollable-why .why-box {
+    flex: 0 0 95vw !important;
+    max-width: 95vw !important;
+    scroll-snap-align: center !important;
+    padding: 2.5rem !important;
+    font-size: 1.3rem !important;
+    min-height: 460px !important;
+    box-sizing: border-box;
+  }
+
+  .scrollable-why .why-box h3 {
+    font-size: 1.8rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .scrollable-why .why-box p {
+    font-size: 1.3rem !important;
+    line-height: 1.9 !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -862,7 +929,7 @@ body {
 </section>
 <section class="why-zappy">
 <h2 style="text-align:center; color:#39D9A9;">Perché scegliere Zappy</h2>
-<div class="why-grid">
+<div class="why-grid scrollable-why">
 <div class="why-box">
 <h3>Semplifica il lavoro del personale</h3>
 <p>Il cameriere non deve più prendere ordinazioni a voce o gestire i pagamenti. Tutto è automatizzato: dal QR al pagamento, con stampa comande in tempo reale. Lo staff può concentrarsi sul servizio e sull’accoglienza.</p>
