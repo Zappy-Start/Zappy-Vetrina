@@ -353,6 +353,32 @@
     }
   }
 
+
+.why-grid,
+.zappy-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem;
+  gap: 1rem;
+  scrollbar-width: none;
+}
+
+.why-grid::-webkit-scrollbar,
+.zappy-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.why-box,
+.zappy-card {
+  flex: 0 0 90%;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+}
+
 </style>
 </head>
 <body>
