@@ -726,6 +726,76 @@
     margin: 0;
   }
 }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #0c0c15;
+}
+
+body {
+  padding-top: 80px;
+}
+
+.arrow-left, .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .arrow-left, .arrow-right {
+    display: block;
+  }
+  .scroll-container {
+    position: relative;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #0c0c15;
+}
+body {
+  padding-top: 80px;
+}
+
+.scroll-container {
+  position: relative;
+}
+.arrow-left, .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .scroll-container .arrow-left, .scroll-container .arrow-right {
+    display: block;
+  }
+  .arrow-left { left: 10px; }
+  .arrow-right { right: 10px; }
+}
 </style>
 </head>
 <body>
@@ -744,7 +814,7 @@
 </section>
 <section class="features">
 <h2>Funzionalità principali</h2>
-<div class="grid">
+<div class="scroll-container"><div class="grid">
 <div>
 <div class="feature-box qr-feature">
 <h3>Ordine via QR</h3>
@@ -772,12 +842,12 @@
 <p>L’ordine arriva subito alla stampante del bar o cucina, senza bisogno di cameriere. Il personale riceve comande chiare e precise, in tempo reale. Meno stress, più organizzazione e zero errori.</p>
 </div>
 </div>
-</div>
+</div></div>
 <a class="back-btn" href="index.html">← Torna alla Home</a>
 </section>
 <section class="why-zappy">
 <h2 style="text-align:center; color:#39D9A9;">Perché scegliere Zappy</h2>
-<div class="why-grid">
+<div class="scroll-container"><div class="why-grid">
 <div class="why-box">
 <h3>Semplifica il lavoro del personale</h3>
 <p>Il cameriere non deve più prendere ordinazioni a voce o gestire i pagamenti. Tutto è automatizzato: dal QR al pagamento, con stampa comande in tempo reale. Lo staff può concentrarsi sul servizio e sull’accoglienza.</p>
@@ -794,11 +864,11 @@
 <h3>Totale controllo dal pannello</h3>
 <p>Con la dashboard Zappy vedi tutti gli ordini in tempo reale, gestisci i prodotti, i prezzi e analizzi le vendite per prendere decisioni strategiche basate sui dati.</p>
 </div>
-</div>
+</div></div>
 </section>
 <section class="zappy-unique">
 <h2 style="text-align:center; color:#39D9A9;">I Vantaggi Concreti di Zappy</h2>
-<div class="zappy-grid">
+<div class="scroll-container"><div class="zappy-grid">
 <div class="zappy-card">
 <h3>Attivazione Istantanea</h3>
 <p>Con Zappy non servono installazioni complesse: colleghi la stampante, imposti i prodotti e sei subito operativo. Anche senza competenze tecniche.</p>
@@ -815,7 +885,31 @@
 <h3>Analisi in Tempo Reale</h3>
 <p>Dalla dashboard puoi vedere le vendite, gestire i menu, cambiare prezzi e leggere gli ordini in diretta. Tutto sotto controllo, ovunque ti trovi.</p>
 </div>
-</div>
+</div></div>
 </section>
-</body>
+<a href="https://wa.me/393331112233" style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; border-radius: 50%; width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 24px; z-index: 1000;" target="_blank">💬</a><a href="https://wa.me/393331112233" style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; border-radius: 28px; padding: 0.6rem 1rem; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; z-index: 1000;" target="_blank">💬 Scrivici</a><script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.scroll-container').forEach(container => {
+    const content = container.querySelector('div');
+    if (!content) return;
+
+    const left = document.createElement('div');
+    left.className = 'arrow-left';
+    left.innerHTML = '‹';
+    const right = document.createElement('div');
+    right.className = 'arrow-right';
+    right.innerHTML = '›';
+
+    container.appendChild(left);
+    container.appendChild(right);
+
+    left.addEventListener('click', () => {
+      content.scrollBy({ left: -window.innerWidth * 0.9, behavior: 'smooth' });
+    });
+    right.addEventListener('click', () => {
+      content.scrollBy({ left: window.innerWidth * 0.9, behavior: 'smooth' });
+    });
+  });
+});
+</script></body>
 </html>
