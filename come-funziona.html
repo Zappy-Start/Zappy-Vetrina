@@ -667,6 +667,50 @@
     gap: 1.2rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .zappy-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .zappy-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .zappy-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .zappy-card {
+    flex: 0 0 100vw;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    max-width: 100vw;
+  }
+
+  .zappy-grid::-webkit-scrollbar {
+    display: none;
+  }
+}
 </style>
 </head>
 <body>
