@@ -319,30 +319,37 @@
     .why-grid,
     .zappy-grid {
       display: flex;
+      flex-direction: row;
       flex-wrap: nowrap;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-      gap: 1rem;
+      -webkit-overflow-scrolling: touch;
       padding-bottom: 1rem;
     }
 
     .why-box,
     .zappy-card {
-      flex: 0 0 90%;
-      scroll-snap-align: center;
-      width: auto !important;
-      min-width: 90%;
-      max-width: 90%;
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box;
+      margin-right: 1rem;
+    }
+
+    .why-box:last-child,
+    .zappy-card:last-child {
+      margin-right: 0;
     }
 
     .why-box p,
     .zappy-card p {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
     }
 
     .why-box h3,
     .zappy-card h3 {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
   }
 
